@@ -1,0 +1,9 @@
+
+prhlt offline feature 
+
+the image is divided into a grid of small square cells sized a small fraction of the image height (H/20). Then for each cell we compute 
+three di↵erent values
+
+1.compute normalize gray level
+2.horizontal gray_level derivatives
+3.vertical gray_level derivatives
