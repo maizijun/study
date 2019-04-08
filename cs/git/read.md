@@ -8,3 +8,5 @@ git config --global user.email johndoe@example.com
 git commit -m comment
 
 git config --list
+
+git log (show all the previous version)
