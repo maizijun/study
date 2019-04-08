@@ -7,3 +7,4 @@ git config --global user.email johndoe@example.com
 
 git commit -m comment
 
+git config --list
