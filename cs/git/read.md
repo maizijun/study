@@ -1,4 +1,4 @@
-git init
+git init (create a git)
 
 git add file_name (the file should be in the git folder)
 
@@ -10,3 +10,8 @@ git commit -m comment
 git config --list
 
 git log (show all the previous version)
+
+git reset --hard HEAD^ 
+git reset --hard HEAD^^
+git reset --hard commit_id (recover the commit_id version)
+
