@@ -11,7 +11,7 @@ git config --list
 
 git log (show all the previous version)
 
-git reset --hard HEAD^ 
-git reset --hard HEAD^^
+git reset --hard HEAD^ \n
+git reset --hard HEAD^^ \n
 git reset --hard commit_id (recover the commit_id version)
 
