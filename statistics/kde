@@ -1,0 +1,9 @@
+
+## this is for the kernal density estimation
+
+given a set of points, we want to build a model so that when a new point comes, we can do the prediction, kde is the nonparametric method.
+We draw a scatter plot of (x,y) and make several bins, each new point estimation is the y in which the bin x is in.
+
+But it has one main problem: how to set the appropriate bin width. When the width is to much, the estimate is too rough，otherwise, the curve 
+maybe not be enouch smooth. we want to find the appropriate bin width
+
