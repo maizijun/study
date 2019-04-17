@@ -7,3 +7,5 @@ We draw a scatter plot of (x,y) and make several bins, each new point estimation
 But it has one main problem: how to set the appropriate bin width. When the width is to much, the estimate is too rough，otherwise, the curve 
 maybe not be enouch smooth. we want to find the appropriate bin width
  
+Intuitively,we can use the mse cost criteria to train bandwidth
+
