@@ -1,0 +1,13 @@
+## this file is for gaussian process
+
+given sets (xi,yi), we do the prediction yi+1 when xi+1 comes. we need to estimate p(yi+1|xi+1)
+
+p(y|x) = N(0,cov + a * I), cov is the covariance matrix and a is for random turbulance
+
+we will estimate the i+1 * i+1 covariance matrix like the form(Cn,k
+                                                               k.t(), c)
+                                                               
+cn is the covariance funcation and k is the kernal function xi+1 between xk for k in 1 to i
+
+so p(yI+1|X,Y) will follow a gaussian distribution with mean xxx and variance xxxxx
+
