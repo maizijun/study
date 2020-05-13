@@ -1,13 +1,19 @@
-## this file is for gaussian process
+#### this file is for gaussian process
 
 given sets (xi,yi), we do the prediction yi+1 when xi+1 comes. we need to estimate p(yi+1|xi+1)
 
-p(y|x) = N(0,cov + a * I), cov is the covariance matrix and a is for random turbulance
+model:y = x.w, and w has its own prior distribution,w ~ N(0,Σp)
 
-we will estimate the i+1 * i+1 covariance matrix like the form(Cn,k
-                                                               k.t(), c)
-                                                               
+assume that p(y|x) = N(μ,cov), cov is the covariance matrix
+we could use kernal function to evaluate the cov, like rbf
+
+we will estimate the i+1 * i+1 covariance matrix like the form(Cn,  k
+                                                               k.t, c)                                                   
 cn is the covariance funcation and k is the kernal function xi+1 between xk for k in 1 to i
 
 so p(yI+1|X,Y) will follow a gaussian distribution with mean xxx and variance xxxxx
 
+We could get yi+1|xi+1,x,y = N(xi+1.t * A^-1 *X *y / σn^2 , xi+1.t* A^-1 *Xi+1)
+where A = 1/σn^2 * X * X.t + Σp^-1
+
+so simple linear regression and ridge regression both are specific cases of Gaussian Process
