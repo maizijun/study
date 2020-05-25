@@ -2,7 +2,7 @@ class Solution:
     def generateParenthesis(self, n):
         ## somehow good problem ##
 
-        ## 枚举法 ##
+        ## 枚举法 ## 俗称回溯法？？
         '''
         列出所有括号的情况，使用balance变量（#左括号-#右括号），
         若balance>=0，表示是有效的括号组合
